@@ -27,7 +27,20 @@ To set up and run the Audio Summarizer project locally, follow these steps:
    git clone https://github.com/yourusername/audio-summarizer.git
    cd audio-summarizer
 
-``` python -m venv venv
-source venv/bin/activate   # On Windows use `venv\Scripts\activate`
+2. **Create virtual environment**
+   ``` python -m venv venv
+   source venv/bin/activate   # On Windows use `venv\Scripts\activate`
+   ```
+
+3. **Install Required Packages:**
+   - Create a .env file in the root directory of the project to store your Google API key.
+     GOOGLE_API_KEY=your_google_api_key
+
+   - Then install the necessary Python packages:
+     ```pip install -r requirements.txt
+     ```
+4. **Run the Application:**
+   ```streamlit run app.py
 ```
+
 
