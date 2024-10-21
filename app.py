@@ -24,6 +24,15 @@ def summarize_text(text):
     
     return summary
 
+def translate_text(text):
+    model =  genai.GenerativeModel("gemini-1.5-flash")
+    instruction = "Please translate the following text to English."
+    prompt = f"{instruction}\n\nText to translate:\n{text}"
+
+    response = model.generate_content(prompt)
+    translated_text = response.text
+    return translated_text    
+
 # Define function to handle audio transcription
 def transcribe_audio(audio_file):
     if not os.path.exists(audio_file):
@@ -67,6 +76,8 @@ if st.button("Summarize"):
         if transcript:
             detected_language = detect_language(transcript)
             st.write(f"Detected Language: {detected_language}")
+
+            translated_text = translate_text(transcript)
 
             # Show the transcript (optional)
             # st.write("Transcript of the audio:")
