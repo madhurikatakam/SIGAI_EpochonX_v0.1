@@ -38,9 +38,9 @@ To set up and run the Audio Summarizer project locally, follow these steps:
 
    - Then install the necessary Python packages:
      ```pip install -r requirements.txt
-     ```
+        ```
 4. **Run the Application:**
    ```streamlit run app.py
-```
+      ```
 
 
