@@ -7,6 +7,7 @@ The Audio Summarizer project aims to provide a user-friendly web application tha
 - Enable users to upload audio files in various formats (MP3, WAV, M4A).
 - Transcribe the uploaded audio files into text.
 - Detect the language of the transcribed text.
+- Translate the text to english if it is in other language 
 - Generate a summary of the transcribed content using Google Generative AI.
 - Allow users to download the generated summary as a text file.
 
