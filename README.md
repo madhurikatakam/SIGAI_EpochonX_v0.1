@@ -37,10 +37,10 @@ To set up and run the Audio Summarizer project locally, follow these steps:
      GOOGLE_API_KEY=your_google_api_key
 
    - Then install the necessary Python packages:
-     ```pip install -r requirements.txt
-        ```
+    pip install -r requirements.txt
+
 4. **Run the Application:**
-   ```streamlit run app.py
-      ```
+   streamlit run app.py
+
 
 
